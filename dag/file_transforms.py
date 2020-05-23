@@ -26,3 +26,4 @@ def json2csv(**kwargs):
     # output flattened data to csv
     df = pd.DataFrame(data_flatten)
     df.to_csv(kwargs['output'])
+    print("JSON file {} successfully flattened into {}".format(kwargs['input'], kwargs['output']))
